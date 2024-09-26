@@ -135,3 +135,8 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+#video {
+    text-align: center;
+    text-decoration: none;
+}
