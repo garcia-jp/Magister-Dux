@@ -22,23 +22,59 @@
 
     <main>
         <section id="home">
-            <h1>Bem-vindo ao Sistema Educacional</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <h1>Bem-vindo ao Magister Dux</h1>
+            <p>O projeto tem como objetivo a integração e consolidação de uma ampla gama
+                de ferramentas e programas utilizados por educadores no processo de criação e
+                desenvolvimento de atividades educacionais. Isso inclui a elaboração de provas,
+                planos de aula, apresentações de slides, imagens e outros recursos didáticos
+                essenciais. A proposta visa reunir todas essas funcionalidades em uma única
+                plataforma digital, com a finalidade de centralizar e simplificar o trabalho dos
+                professores.</p>
         </section>
 
         <section id="sobre">
             <h2>Sobre Nós</h2>
-            <p>Consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+                Ao proporcionar um ambiente unificado, o projeto busca otimizar o
+                planejamento e a execução das atividades educacionais, tornando o processo mais
+                eficiente e acessível, especialmente para aqueles docentes que podem não estar
+                familiarizados com a diversidade de tecnologias e softwares disponíveis. A plataforma
+                permitirá que professores e designers criem ou disponibilizem seus próprios planos
+                de aula, atividades, templates, elementos gráficos, entre outros recursos, que
+                poderão ser utilizados por outros educadores. Esses elementos poderão ser
+                oferecidos gratuitamente ou, no caso da adesão ao plano premium, poderão ser
+                comercializados a preços acessíveis, funcionando como um marketplace interno.
+            </p>
         </section>
 
         <section id="exercicios">
             <h2>Geração de Listas de Exercícios</h2>
-            <form action="">
+            <form id="formulario" action="">
                 <label for="disciplina">Disciplina:</label>
-                <input type="text" id="disciplina" name="disciplina"><br><br>
+                <!-- <input type="text" id="disciplina" name="disciplina"><br><br> -->
+                <select id="disciplina" name="disciplina" onchange="javascript:trocarBotao(this);">
+                    <option value="">Selecione uma matéria</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="portugues">Português</option>
+                </select>
                 <label for="nivel">Nível:</label>
-                <select id="nivel" name="nivel">
+                <select id="nivel" name="nivel" onchange="javascript:trocarBotao(this);">
                     <option value="">Selecione um nível</option>
                     <option value="basico">Básico</option>
-                    <option value="inter">Médio</option>
-                    <option value="inter">Difícil</option>
+                    <option value="medio">Médio</option>
+                    <!-- <option value="inter">Difícil</option> -->
+                </select>    
+                <!-- <input onclick="dowloadArquivo()" id="download-button" type="submit" value="Gerar lista"> -->
+                <a id="download-button" href="#" download="">Gerar lista</a>
+                <!-- <a id="botao-gerarLista" href="downloads/matematica_basico.pdf" download=""><button id="download-button">Gerar lista</button></a> -->
+                <!-- onclick="getPathDowload()" -->
+            </form>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            Entre em contato com a nossa equipe por meio do <a target="_blank" href="mailto:joao.garcia.ifpr@gmail.com">email</a> ou do <a target="_blank" href="https://wa.me/5542984357933?text=Quero%20saber%20mais%20sobre%20o%20Magister%20Dux.">WhatsApp</a>.
+        </section>
+    </main>
+    <script type="text/javascript" src="logical.js"></script>
+</body>
